@@ -15,7 +15,8 @@ angular.module('calHeatmap', []).directive('calHeatmap', function () {
             range: 3,
             domainGutter: 10,
             legend: [2, 4, 6, 8, 10],
-            itemName: 'item'
+            itemName: 'item',
+            displayLegend: false
         };
         angular.extend(defaults, config);
         cal.init(defaults);
