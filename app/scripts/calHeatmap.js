@@ -20,6 +20,12 @@ angular.module('calHeatmap', []).directive('calHeatmap', function () {
         };
         angular.extend(defaults, config);
         cal.init(defaults);
+
+        scope.$on('refreshCalHeatMap', function() {
+            console.log('data - ');
+            cal.update(config.data);
+        });
+
     }
     return {
         template: '<div class="cal-heatmap" config="config"></div>',
