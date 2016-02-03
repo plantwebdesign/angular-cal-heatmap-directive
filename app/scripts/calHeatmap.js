@@ -27,14 +27,14 @@ angular.module('calHeatmap', []).directive('calHeatmap', function ($templateCach
       cal.update(config.data);
     });
 
-    $templateCache.put('cal-heatmap/cal-heatmap-main',
-      '<div ng-show="config.displayControls">' +
-      '<input class="btn btn-xs btn-default" type="button" value="<" id="prev"/> <input class="btn btn-xs btn-default" type="button" value=">" id="next"/>' +
-      '</div>' +
-      '<div class="cal-heatmap" config="config"></div>'
-    );
-
   }
+
+  $templateCache.put('cal-heatmap/cal-heatmap-main',
+    '<div ng-show="config.displayControls">' +
+    '<input class="btn btn-xs btn-default" type="button" value="<" id="prev"/> <input class="btn btn-xs btn-default" type="button" value=">" id="next"/>' +
+    '</div>' +
+    '<div class="cal-heatmap" config="config"></div>'
+  );
 
   return {
     templateUrl: 'cal-heatmap/cal-heatmap-main',
