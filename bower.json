@@ -15,8 +15,7 @@
   ],
   "description": "Angularjs directive to render cal-heatmap",
   "main": [
-    "app/scripts/calHeatmap.js",
-    "app/scripts/calHeatmapControls.js"
+    "app/scripts/calHeatmap.js"
   ],
   "keywords": [
     "cal-heatmap",
